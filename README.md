@@ -1,3 +1,3 @@
 # Scripts
 
-Contient divers scripts en vrac
+Collection de divers scripts indépendants
