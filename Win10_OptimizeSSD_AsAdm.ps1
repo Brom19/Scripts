@@ -1,7 +1,7 @@
-#DÈsactiver date dernier accËs
+Ôªø#D√©sactiver date dernier acc√®s
 fsutil behavior set disablelastaccess 1
 
-#DÈsactiver indexation
+#D√©sactiver indexation
 function Disable-Indexing{
     Param($Drive)
     $obj = Get-WmiObject -Class Win32_Volume -Filter "DriveLetter='$Drive'"
@@ -16,22 +16,22 @@ disable-indexing "c:"
 Set-Service WSearch -StartupType Disabled
 Stop-Service WSearch
 
-#DÈsactiver ou dÈplacer le fichier d'Èchange
+#D√©sactiver ou d√©placer le fichier d'√©change
 #TODO
 
-#DÈsactiver fichiers temporaires
+#D√©sactiver fichiers temporaires
 #TODO
 
-#DÈsactiver la protection syst√®me
+#D√©sactiver la protection syst√É¬®me
 Disable-ComputerRestore -drive "C:\", "D:\"
 
-#DÈsactiver Prefetch
+#D√©sactiver Prefetch
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" -Name EnablePrefetcher -Value 0
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" -Name EnableSuperfetcher -Value 0
 
-#DÈsactiver Superfetch
+#D√©sactiver Superfetch
 Set-Service SysMain -StartupType Disabled
 Stop-Service SysMain
 
-#DÈsactive mise en veille prolongÈe
+#D√©sactive mise en veille prolong√©e
 powercfg -h off

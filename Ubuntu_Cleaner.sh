@@ -1,4 +1,4 @@
-#!/bin/sh
+﻿#!/bin/sh
 
 # source : https://doc.ubuntu-fr.org/nettoyer_ubuntu
 

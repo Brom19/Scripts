@@ -1,4 +1,4 @@
-'*** Déclaration des variables
+﻿'*** Déclaration des variables
 Dim ObjetRegedit
 
 '*** Permet de continuer le script même s'il y a une erreur
