@@ -5,13 +5,13 @@ Get-AppxPackage *3dbuilder* | Remove-AppxPackage
 Get-AppxPackage *windowsalarms* | Remove-AppxPackage
 
 #Désinstaller Calculatrice
-Get-AppxPackage *windowscalculator* | Remove-AppxPackage
+#Get-AppxPackage *windowscalculator* | Remove-AppxPackage
 
 #Désinstaller Caméra
 Get-AppxPackage *windowscamera* | Remove-AppxPackage
 
 #Désinstaller Contacter le Support
-#Cette application ne peut pas être enlevé.
+Get-AppxPackage *gethelp* | Remove-AppxPackage
 
 #Désinstaller Cortana
 #Cette application ne peut pas être enlevé.
@@ -41,7 +41,7 @@ Get-AppxPackage *onenote* | Remove-AppxPackage
 Get-AppxPackage *people* | Remove-AppxPackage
 
 #Désinstaller Store
-Get-AppxPackage *windowsstore* | Remove-AppxPackage
+#Get-AppxPackage *windowsstore* | Remove-AppxPackage
 
 #Désinstaller Sport
 Get-AppxPackage *bingsports* | Remove-AppxPackage
@@ -53,7 +53,16 @@ Get-AppxPackage *soundrecorder* | Remove-AppxPackage
 Get-AppxPackage *bingweather* | Remove-AppxPackage
 
 #Désinstaller Commentaires sur Windows
-#Cette application ne peut pas être enlevé.
+Get-AppxPackage *windowsfeedbackhub* | Remove-AppxPackage
 
 #Désinstaller Xbox
-Get-AppxPackage *xboxapp* | Remove-AppxPackage
+Get-AppxPackage *xbox* | Remove-AppxPackage
+
+#Désinstaller Solitaire
+Get-AppxPackage *SolitaireCollection* | Remove-AppxPackage
+
+#Désinstaller Sticky Notes
+Get-AppxPackage *stickynotes* | Remove-AppxPackage
+
+
+
